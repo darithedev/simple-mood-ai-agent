@@ -22,11 +22,11 @@ This is a simple AI-powered app that detects your mood from natural language and
 Open your browser to `http://localhost:3000`
 ---
 
-## ⚠️ Node.js Version Requirement
+## ⚠️ Node.js Version Requirement ⚠️
 
 This app uses modern JavaScript features (like optional chaining `?.`) which require **Node.js v14 or later** (v16+ recommended).
 
-### ✅ Recommended: Use `nvm` to manage Node versions
+### Recommended: Use `nvm` to manage Node versions
 
 1. Install `nvm` (Node Version Manager):
    ```bash
