@@ -12,7 +12,7 @@ This is a basic AI-powered web app that takes natural language input, detects th
 
 ---
 
-## 🚀 Getting Started (From Scratch)
+## 🚀 Getting Started
 
 Follow these instructions **even if your system doesn't have Node.js, npm, or nvm installed**.
 
