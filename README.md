@@ -1,92 +1,51 @@
 # Mood Quote AI Agent
 
-This is a basic AI-powered web app that takes natural language input, detects the user's mood using OpenAI's GPT-3.5-turbo, and responds with a relevant motivational or reflective quote. If no static quote exists, it generates one using GPT and caches it for future reuse.
+This is a simple AI-powered app that detects your mood from natural language and returns a motivational quote using GPT and predefined content.
 
-## Features
+## Getting Started
 
-- Natural language mood detection
-- Predefined mood-based quotes
-- GPT fallback quote generation
-- Persistent caching of generated quotes
-- Ready to deploy on Vercel or run locally
+1. Install dependencies:
+   ```
+   npm install
+   ```
 
+2. Create a `.env.local` file or edit `.env.example` file to `.env.local`:
+   ```
+   OPENAI_API_KEY=your-openai-key-here
+   ```
+
+3. Run the app:
+   ```
+   npm run dev
+   ```
+
+Open your browser to `http://localhost:3000`
 ---
 
-## 🚀 Getting Started (From Scratch)
+## ⚠️ Node.js Version Requirement
 
-Follow these instructions **even if your system doesn't have Node.js, npm, or nvm installed**.
+This app uses modern JavaScript features (like optional chaining `?.`) which require **Node.js v14 or later** (v16+ recommended).
 
-### 1. Install Node Version Manager (nvm)
+### ✅ Recommended: Use `nvm` to manage Node versions
 
-#### macOS / Linux
+1. Install `nvm` (Node Version Manager):
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   ```
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-```
+2. Restart your terminal, then install and use Node 20:
+   ```bash
+   nvm install 20
+   nvm use 20
+   ```
 
-Then activate it:
-```bash
-export NVM_DIR="$HOME/.nvm"
-source "$NVM_DIR/nvm.sh"
-```
+3. Verify the version:
+   ```bash
+   node -v
+   # Should be v20.x.x
+   ```
 
-#### Windows
-
-Use [nvm-windows installer](https://github.com/coreybutler/nvm-windows/releases)
-
----
-
-### 2. Install Node.js (LTS)
-
-```bash
-nvm install 20
-nvm use 20
-```
-
----
-
-### 3. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/mood-quote-ai-agent.git
-cd mood-quote-ai-agent
-```
-
----
-
-### 4. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-### 5. Add Your OpenAI API Key
-
-Create a file named `.env.local` in the root directory:
-
-```bash
-touch .env.local
-```
-
-Open it and add:
-
-```
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-> Replace `your_openai_api_key_here` with your actual API key from [OpenAI](https://platform.openai.com/account/api-keys)
-
----
-
-### 6. Run the App
-
-```bash
-npm run dev
-```
-
-Then visit [http://localhost:3000](http://localhost:3000) in your browser.
+This ensures full compatibility with the app. If you see an error like `SyntaxError: Unexpected token '?'`, it's because your Node version is too old.
 
 ---
 
@@ -108,4 +67,4 @@ utils/
 
 ## 💬 Need Help?
 
-Open an issue or reach out for feature ideas, bugs, or improvements!
+Open an issue or reach out
